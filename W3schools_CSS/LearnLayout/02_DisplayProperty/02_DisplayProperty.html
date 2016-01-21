@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .floating-box {
+            display: inline-block;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .after-box {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<p>
+    display is CSS's most important property for controlling layout. Every element has a default display value depending on what type of element it is. The default for most elements is usually block or inline. A block element is often called a block-level element. An inline element is always just called an inline element.
+</p>
+<p>
+    A <b>block-level</b> element starts on a new line and stretches out to the left and right as far as it can
+</p>
+
+    <p>Html</p>
+    <ul>
+        <li>div</li>
+        <li>p</li>
+        <li>form</li>
+    </ul>
+
+    <p>Html5</p>
+    <ul>
+        <li>header</li>
+        <li>footer</li>
+        <li>section</li>
+    </ul>
+
+<p>
+    An <b>inline element</b> can wrap some text inside a paragraph <span> like this </span> without disrupting the flow of that paragraph.
+</p>
+    <ul>
+        <li>span</li>
+        <li>a</li>
+        <li>img</li>
+    </ul>
+
+    <p>
+        Another common display value is <b>none</b>. Some specialized elements such as <b>script</b> use this as their default. It is commonly used with JavaScript to hide and show elements without really deleting and recreating them.
+
+        This is different from <b>visibility</b>. Setting display to none will render the page as though the element does not exist. <b>visibility: hidden;</b> will hide the element, but the element will still take up the space it would if it was fully visible. 
+    </p>
+    <p>
+        <b>visibility: hidden;</b> Jednak elementem będzie nadal zajmują tyle samo miejsca co wcześniej
+    </p>
+
+    <h2>The New Way - using inline-block</h2>
+
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+
+    <div class="after-box">Another box, after the floating boxes...</div>
+</body>
+</html>
