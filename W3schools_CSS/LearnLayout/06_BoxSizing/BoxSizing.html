@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .simple {
+            width: 500px;
+            margin: 20px auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+
+        .fancy {
+            width: 500px;
+            margin: 20px auto;
+            padding: 50px;
+            border: solid blue 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <p>Poprzednie rozwiązanie nie było nieintuicyjne, dlatego  można użyć <b>box-sizing</b></p>
+    <p>
+        The original box model behavior was eventually considered nieintuicyjne, so a new CSS property called box-sizing was created. When you set box-sizing: border-box; on an element, the padding and border of that element no longer increase its width. Here is the same example as the previous page, but with box-sizing: border-box; on both elements:
+    </p>
+
+    <div class="fancy">And I'm bigger! </div>
+    <div class="simple">I'm smaller... </div>
+</body>
+</html>
