@@ -1,0 +1,48 @@
+﻿#container {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#left-column {
+    width: 700px;
+    float: left;
+    background-color: blue;
+}
+
+#right-column {
+    width: 260px;
+    float: left;
+    background-color: orange;
+}
+/*Tablet*/
+@media only screen and (max-width: 959px) {
+    #container {
+        width: 100%;
+    }
+    #left-column {
+        width: 70%;
+    }
+    #right-column {
+        width: 30%;
+    }
+    img{
+        width:100%;/*Resize image to size screen*/
+    }
+}
+/*Mobile*/
+@media only screen and (max-width: 640px) {
+
+    #left-column {
+        width: 100%;
+    }
+    #right-column {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+        #container {
+        width: 320px;
+    }
+}

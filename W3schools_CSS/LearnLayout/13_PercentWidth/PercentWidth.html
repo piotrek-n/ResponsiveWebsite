@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        article {
+            border: 1px solid red;
+        }
+        div{  border:1px solid red;
+        }
+
+            article img {
+                float: right;
+                width: 50%;
+            }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        /**/
+
+        nav {
+            float: left;
+            width: 25%;
+        }
+
+        section {
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Percent is a measurement unit relative to the containing block. It's great for images: here we make an image that is always 50% the width of its container. Try shrinking down the page to see what happens! </h3>
+    <article class="clearfix">
+        <img src="http://learnlayout.com/images/ilta.png" alt="Alternate Text" />
+        You could even use min-width and max-width to limit how big or small the image can get!
+    </article>
+
+    <div class="clearfix">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft list</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <section>This example works just like the last one. Notice we put a clearfix on the container. It's not needed in this example, but it would be if the nav was longer than the non-floated content.</section>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .box {
+              float: left;
+              width: 200px;
+              height: 100px;
+              margin: 1em;
+              background-color:red;
+            }
+        .after-box {
+        clear:left;
+        }
+
+/**/
+.box2 {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}
+    </style>
+</head>
+<body>
+
+    <h3>Hard Way</h3>
+    <b>Sąsiednie elementy będą płynąć w strone elementu z atrybutem float, żeby zakończyć tą sekwencję należy użyć clear. Następnie nie będą już opływać</b>
+    <b>inline-block linowość między dwoma elementami</b>
+    <br />  
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="box">
+        I'm floating!
+    </div>
+    <div class="after-box">
+        I'm using clear so I don't float next to the above boxes.
+    </div>
+
+    <h3>Easy Way</h3>
+    <div class="box2"> I'm floating! 2</div>
+    <div class="box2"> I'm floating! 2</div>
+    <div>I am not floating</div>
+</body>
+</html>

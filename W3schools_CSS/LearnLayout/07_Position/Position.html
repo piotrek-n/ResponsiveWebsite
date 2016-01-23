@@ -5,11 +5,67 @@
     <style>
         .static {
             position: static;
+            background-color: aquamarine;
+        }
+
+        .relative1 {
+            position: relative;
+            background-color: red;
+        }
+
+        .relative2 {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: blue;
+            width: 500px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            background-color: orange;
+        }
+        .relative 
+        {
+          position: relative;
+          width: 600px;
+          height: 400px;
+          background-color:green;
+        }
+        .absolute
+         {
+          position: absolute;
+          top: 120px;
+          right: 0;
+          width: 300px;
+          height: 200px;
+          background-color:gray;
         }
     </style>
 </head>
 <body>
 
     <div class="static">static is the default value. An element with position: static; is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned. </div>
+    <div class="relative1"> behaves the same as <b>static</b> unless you add some extra properties. <b>Top;Left;</b> </div>
+    <div class="relative2">Setting the <b>top, right, bottom, and left</b>  properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. </div>
+    <div class="static"> Other static element</div>
+
+    <div class="fixed">
+        A fixed element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. As with relative, the top, right, bottom, and left properties are used.
+
+        I'm sure you've noticed that fixed element in the lower-right hand corner of the page. I'm giving you permission to pay attention to it now. Here is the CSS that puts it there:
+    </div>
+
+    <div class="relative"> class="relative" The element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's <b>LEFT</b> position </div>
+    <div class="absolute"> class="absolute" The element is positioned relative to its first positioned (not static) ancestor element </div>
+
+    <div class="relative">
+        class="relative" The element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's <b>LEFT</b> position
+        <div class="absolute"> class="absolute" The element is positioned relative to its first positioned (not static) ancestor element </div>
+    </div>
+
 </body>
 </html>
