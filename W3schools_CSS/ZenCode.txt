@@ -1,0 +1,2 @@
+html:5>h1.title+(div.container>ul>li*3>a:href>lorem)+div#output+form>input
+http://www.cssfontstack.com/
